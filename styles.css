@@ -1,11 +1,9 @@
-/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  /* padding: 0; */
 }
 
-/* Estilos de encabezado */
+
 header {
   background-color: #320B3B;
   color: #fff;
@@ -13,7 +11,7 @@ header {
   text-align: center;
 }
 
-/* Estilos de navegación */
+/* Barra de navegacion inferior */
 nav {
   background-color: #75228A;
   text-align: center;
@@ -39,10 +37,17 @@ nav a:hover {
   padding: 20px 0;
 }
 
+/* Banner de inicio */
 .imagen-inicio{
   width: 100%;
 }
 
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/*----------------------- Primera seccion --------------------*/
 #uno {
   background-color: #F2F2F2;
   height: 700px;
@@ -52,30 +57,39 @@ nav a:hover {
   color: #000000;
 }
 
+/* Primera hoja */
 .uno-a {
   width: 100%;
   padding: 10px 5px;
   margin: 10px;
-  box-shadow: 5px 5px 15px #320B3B;
+  box-shadow: 5px 5px 15px 5px #320B3B;
+
 }
+
 .uno-a:hover {
   color: #ffffff;
   background-color: #320B3B;
   
 }
 
+/* Texto de bienvenida */
+.texto-uno-a{
+  margin: 5%;
+}
+
 .uno-b {
   width: 100%;
   padding: 10px 5px;
   margin: 10px;
-  box-shadow: 5px 5px 15px #320B3B;
+  box-shadow: 5px 5px 15px 5px #320B3B;
 }
 .uno-b:hover {
   color: #ffffff;
   background-color: #320B3B;
 }
+/* ------------------------------------------------------------------- */
 
-/* Estilos de pie de página */
+/*------------------------------- Footer ----------------------------- */
 footer {
   background-color:#320B3B;
   color: #fff;
@@ -86,16 +100,11 @@ footer {
 }
 
 
-/* Estilos de sección */
-section {
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
 .footer-container {
   display: flex;
   justify-content: space-between;
 }
+
 
 .social-media{
   display: flex;
@@ -105,39 +114,71 @@ section {
 
 }
 .contacto {
-  /* margin-top: 5%; */
+  margin-top: 50px;
   display: flex;
   width: 30%;
   text-align: center; /* Para centrar horizontalmente el contenido */
 
 }
+
+/* Mapa de Google */
+.mapa{
+  width: 300px; 
+  height: 150px; 
+  border-color: white;
+  border-width: 2px;
+  border-radius: 5%;
+  border-style: outset;
+}
+
+/* Imagenes de las redes */
 .red-social {
   height: 60px;
   background-color: #A080FD;
-  border-radius: 10px;
-  border-radius: 50%;
+  border-radius: 25%;
 }
-
 .red-social:hover {
   transform: scale(1.5); 
   z-index: 1; 
 }
 
-.footer-bottom {
+/* Pie de pagina */
+.footer-text {
   font-size: 0.8em;
+}
+
+/* Contenedor del boton del Footer */
+.footer-bottom {
+  height: 100%;
+  width: 100%;
+  text-align: end;
+
 }
 
 .contact-info, .social-media {
   flex: 1;
 }
 
+/* Boton del Footer */
 .boton-scroll {
-  margin-top: 50px;
-  background-color: black;
+  background-color: #320B3B;
   color: #fff;
-  width: 100px;
-  height: 25px;
+  width: 50px;
+  height: 100%;
+  border-color: #ffffff;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 15%;
 }
+
+/* Imagen del boton del Footer */
+.imagen-flecha{
+  height: 20px;
+  width: 15px;
+  align-items: baseline;
+}
+/*--------------------------------------------------------------------- */
+
 
 @media (max-width: 768px) {
   .container {
@@ -161,8 +202,6 @@ section {
     width: 90%;
   }
 
-
-  
   .footer-container {
     flex-direction: row;
     justify-content: space-between;
@@ -175,9 +214,13 @@ section {
   }
 
   .contacto {
-    /* margin-top: 5%; */
+    margin-left: 20px;
     width: 100%;
     /* padding-left: 25%; */
+  }
+
+  .red-social{
+    height: 50px;
   }
 
   hr {
