@@ -7,7 +7,7 @@ body {
 
 /* Estilos de encabezado */
 header {
-  background-color: #333;
+  background-color: #320B3B;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -15,7 +15,7 @@ header {
 
 /* Estilos de navegación */
 nav {
-  background-color: #666;
+  background-color: #75228A;
   text-align: center;
   padding: 10px;
   
@@ -28,7 +28,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #444;
+  background-color: #320B3B;
 }
 
 /* Estilos de contenido */
@@ -39,9 +39,45 @@ nav a:hover {
   padding: 20px 0;
 }
 
+.imagen-inicio{
+  width: 100%;
+}
+
+#uno {
+  background-color: #F2F2F2;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #000000;
+}
+
+.uno-a {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 10px;
+  box-shadow: 5px 5px 15px #320B3B;
+}
+.uno-a:hover {
+  color: #ffffff;
+  background-color: #320B3B;
+  
+}
+
+.uno-b {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 10px;
+  box-shadow: 5px 5px 15px #320B3B;
+}
+.uno-b:hover {
+  color: #ffffff;
+  background-color: #320B3B;
+}
+
 /* Estilos de pie de página */
 footer {
-  background-color: #333;
+  background-color:#320B3B;
   color: #fff;
   text-align: center;
   bottom: 0;
@@ -77,7 +113,7 @@ section {
 }
 .red-social {
   height: 60px;
-  background-color: #fff;
+  background-color: #A080FD;
   border-radius: 10px;
   border-radius: 50%;
 }
@@ -101,12 +137,28 @@ section {
   color: #fff;
   width: 100px;
   height: 25px;
-  align-items: end;
 }
 
 @media (max-width: 768px) {
   .container {
     width: 100%;
+  }
+
+  #uno {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .uno-a {
+    margin: 10px 0;
+    width: 90%;
+  }
+
+  .uno-b {
+    margin-left: 10px 0;
+    width: 90%;
   }
 
 
