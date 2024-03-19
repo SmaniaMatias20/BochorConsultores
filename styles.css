@@ -14,23 +14,32 @@ header {
 /* Barra de navegacion inferior */
 nav {
   background-color: #75228A;
-  text-align: center;
-  padding: 10px;
-  
+  height: 30px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  box-shadow: 5px 5px 15px 5px #1a081f;
+  padding-right: 40px;
+
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;
+
 }
 
 nav a:hover {
   background-color: #320B3B;
 }
 
-/* Estilos de contenido */
-.container {
+.nav {
+  list-style: none;
+  display: flex;
+}
+
+main {
   width: 90%;
   height: 100%;
   margin: auto;
@@ -38,7 +47,7 @@ nav a:hover {
 }
 
 /* Banner de inicio */
-.imagen-inicio{
+.banner-image{
   width: 100%;
 }
 
@@ -48,7 +57,7 @@ section {
 }
 
 /*----------------------- Primera seccion --------------------*/
-#uno {
+#one {
   background-color: #F2F2F2;
   height: 100%;
   display: flex;
@@ -58,8 +67,8 @@ section {
 }
 
 /* Primera hoja */
-.uno-a {
-  
+
+article {
   width: 100%;
   padding: 10px 5px;
   margin: 10px;
@@ -67,31 +76,22 @@ section {
 
 }
 
-.uno-a:hover {
+article:hover{
   color: #ffffff;
   background-color: #320B3B;
   
 }
 
+
 /* Texto de bienvenida */
-.texto-uno-a{
+.article-content{
   font-family: 'Poppins';
   margin: 5%;
 }
 
-.uno-b {
-  width: 100%;
-  padding: 10px 5px;
-  margin: 10px;
-  box-shadow: 5px 5px 15px 5px #320B3B;
-}
-.uno-b:hover {
-  color: #ffffff;
-  background-color: #320B3B;
-}
 /* ------------------------------------------------------------------- */
 
-#dos {
+#two {
   height: 100%;
   color: #ffffff;
   background-color: #320B3B;
@@ -100,24 +100,63 @@ section {
 
 } 
 
-.dos-a {
+
+/*------------------------------- Footer ----------------------------- */
+footer {
   width: 100%;
-  padding: 10px 5px;
-  margin: 10px;
-  box-shadow: 5px 5px 15px 5px #320B3B;
-  display: flex;
-  flex-direction: row;
+  height: 100%;
+  background-color:#320B3B;
+  color: #fff;
+  text-align: center;
+  display: block;
+  padding: 0px 10px 0px;
+  align-items: center;
 }
 
-form {
+.footer-container{
+  height: 40px;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.contact{
+  height: 20px;
+  display: flex;
+  margin-top: 10px;
+  padding: 0px;
+  
+}
+
+.red-social {
+  height: 30px;
+  background-color: #A080FD;
+  border-radius: 25%;
+  margin-right: 30px;
+
+}
+.red-social:hover {
+  transform: scale(1.5); 
+  z-index: 1; 
+}
+.footer-text {
+  font-size: 0.8em;
+}
+
+/*---------------------------Formulario----------------------------*/
+/* form {
   width: 75%;
   display: block;
+  background-color: aqua;
+  padding-left: 5px;
 } 
 
 input {
   font-family: 'Poppins';
   height: 30px;
-  width: 200px;
+  width: 250px;
   margin-top: 10px;
   background-color: #C671C8;
   color: white;
@@ -134,7 +173,7 @@ textarea {
   font-family: 'Poppins';
   font-size: medium;
   height: 120px;
-  width: 300px;
+  width: 350px;
   background-color: #C671C8;
   color: white;
   margin-top: 10px;
@@ -144,9 +183,9 @@ textarea {
 
 textarea::placeholder {
   color: white;
-}  
+}   */
 
-button {
+/* button {
   height: 40px;
   width: 80px;
   margin-top: 10px;
@@ -155,136 +194,28 @@ button {
   border: solid;
   border-color: #C671C8;
   border-radius: 10px;
-}
+} */
+
+/*------------------------------------------------------------------*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*------------------------------- Footer ----------------------------- */
-footer {
-  background-color:#320B3B;
-  color: #fff;
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
-
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-
-.social-media{
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centra horizontalmente */
-  /* justify-content: center; Centra verticalmente */
-
-}
-.contacto {
-  margin-top: 50px;
-  display: flex;
-  width: 30%;
-  text-align: center; /* Para centrar horizontalmente el contenido */
-
-}
-
-/* Mapa de Google */
-.mapa{
-  width: 300px; 
-  height: 150px; 
-  border-color: white;
-  border-width: 2px;
-  border-radius: 5%;
-  border-style: outset;
-}
-
-/* Imagenes de las redes */
-.red-social {
-  height: 60px;
-  background-color: #A080FD;
-  border-radius: 25%;
-}
-.red-social:hover {
-  transform: scale(1.5); 
-  z-index: 1; 
-}
-
-/* Pie de pagina */
-.footer-text {
-  font-size: 0.8em;
-}
-
-/* Contenedor del boton del Footer */
-.footer-bottom {
-  height: 100%;
-  width: 100%;
-  text-align: end;
-
-}
-
-.contact-info, .social-media {
-  flex: 1;
-}
-
-/* Boton del Footer */
-.boton-scroll {
-  background-color: #320B3B;
-  color: #fff;
-  width: 50px;
-  height: 100%;
-  border-color: #ffffff;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  border-radius: 15%;
-}
-
-/* Imagen del boton del Footer */
-.imagen-flecha{
-  height: 20px;
-  width: 15px;
-  align-items: baseline;
-}
 /*--------------------------------------------------------------------- */
 
 
 @media (max-width: 768px) {
-  .container {
+  main {
     width: 100%;
   }
 
-  #uno {
+  #one {
     height: auto;
     flex-direction: column;
     align-items: center;
 
   }
 
-  .uno-a {
+  .article {
     margin: 10px 0;
-    width: 90%;
-  }
-
-  .uno-b {
-    margin-left: 10px 0;
     width: 90%;
   }
 
@@ -295,29 +226,9 @@ footer {
     width: 250px;
   }
 
-  .contact-info, .social-media {
-    margin-bottom: 0;
-
-  }
-
-  .contacto {
-    margin-left: 20px;
+  .contact {
+    margin-left: 90px;
     width: 100%;
-  }
-  .mapa { 
-    width: 250px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-
-  }
-
-  .red-social{
-    height: 50px;
-  }
-
-  hr {
-    margin: 0;
   }
 
   
