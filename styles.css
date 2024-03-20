@@ -1,37 +1,43 @@
 body {
-  font-family: 'Poppins';
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: small;
   margin: 0;
 }
 
 
 header {
-  background-color: #320B3B;
+  background-color: #5D2546;
   color: #fff;
   padding: 20px;
   text-align: center;
 }
 
+.logo{
+  height: 200px;
+  width: 200px;
+}
+
 /* Barra de navegacion inferior */
 nav {
-  background-color: #75228A;
+  background-color: #963564;
   height: 30px;
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  box-shadow: 5px 5px 15px 5px #1a081f;
+  box-shadow: 5px 5px 10px 0px #000000;
   padding-right: 40px;
-
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px 100px;
+  font-size: large;
 
 }
 
 nav a:hover {
-  background-color: #320B3B;
+  background-color: #5D2546;
 }
 
 .nav {
@@ -72,40 +78,59 @@ article {
   width: 100%;
   padding: 10px 5px;
   margin: 10px;
-  box-shadow: 5px 5px 15px 5px #320B3B;
+  box-shadow: 5px 5px 15px 5px #5D2546;
 
 }
 
 article:hover{
   color: #ffffff;
-  background-color: #320B3B;
+  background-color: #5D2546;
   
 }
 
 
 /* Texto de bienvenida */
 .article-content{
-  font-family: 'Poppins';
   margin: 5%;
 }
 
 /* ------------------------------------------------------------------- */
 
 #two {
-  height: 100%;
   color: #ffffff;
-  background-color: #320B3B;
+  background-color: #5D2546;
   display: flex;
   flex-direction: row;
-
+  justify-content: center;
 } 
+
+.client {
+  font-size: large;
+  display: block;
+  text-align: center;
+}
+
+.client-image {
+  height: 100px;
+  width: 100px;
+  background-color: #963564;
+  border-radius: 50%;
+  margin-right: 30px;
+  border-color: #fff;
+  border-width: 10px;
+  border-style: double;  /*double, inset, outset */
+}
+
+.client-image:hover {
+  transform: scale(1.5); 
+  z-index: 1; 
+}
 
 
 /*------------------------------- Footer ----------------------------- */
 footer {
-  width: 100%;
   height: 100%;
-  background-color:#320B3B;
+  background-color:#5D2546;
   color: #fff;
   text-align: center;
   display: block;
@@ -132,9 +157,12 @@ footer {
 
 .red-social {
   height: 30px;
-  background-color: #A080FD;
-  border-radius: 25%;
+  background-color: #963564;
+  border-radius: 50%;
   margin-right: 30px;
+  border-color: #fff;
+  border-width: 2px;
+  border-style: double; 
 
 }
 .red-social:hover {
@@ -219,19 +247,6 @@ textarea::placeholder {
     width: 90%;
   }
 
-  .footer-container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 250px;
-  }
-
-  .contact {
-    margin-left: 90px;
-    width: 100%;
-  }
-
-  
 }
 
   
