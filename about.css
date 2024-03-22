@@ -107,6 +107,21 @@ body {
     flex-direction: row;
     justify-content: center;
   } 
+
+  .mision-vision-valores {
+  }
+
+  .imagen-mision, .imagen-vision, .imagen-valores {
+    height: 400px;
+    width: 400px;
+    margin: 0px 30px;
+    border-radius: 10px;
+  }
+
+  .imagen-mision:hover, .imagen-vision:hover, .imagen-valores:hover {
+    transform: scale(1.1); 
+    z-index: 1; 
+  }
   
   
   

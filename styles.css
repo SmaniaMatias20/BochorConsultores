@@ -236,6 +236,13 @@ footer {
 
 
 /*--------------------------------------------------------------------- */
+@media (max-width: 1340px) {
+  .cliente-imagen {
+    margin: 0px 20px;
+  }
+
+
+}
 
 
 @media (max-width: 768px) {
@@ -288,6 +295,10 @@ footer {
   .article {
     margin: 10px 0;
     width: 90%;
+  }
+
+  .cliente-imagen {
+    margin: 0px 50px;
   }
 
   .red-social{
