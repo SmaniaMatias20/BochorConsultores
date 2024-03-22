@@ -106,9 +106,13 @@ article:hover{
 }
 
 .imagen-articulo {
-  margin: 5%;
+  /* margin: 5%; */
   height: 200px;
   width: 350px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+
 }
 
 
@@ -123,9 +127,14 @@ article:hover{
   text-align: center;
 } 
 
+.question {
+  font-size: 30px;
+}
+
 .sintoma {
   display: flex;
   text-align: justify;
+  font-size: large;
 }
 
 
@@ -232,6 +241,15 @@ footer {
 
   .red-social{
     margin-right: 10px;
+  }
+
+  .sintoma {
+    display: block;
+    font-size: medium;    
+  }
+
+  li {
+    list-style: none;
   }
 
 }
