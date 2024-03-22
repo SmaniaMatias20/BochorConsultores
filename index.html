@@ -5,26 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bochor Consultores</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo.png">
 </head>
 <body>
     <header>
-        <img class="logo" src="images/logo.png" alt="">
+        <a href="index.html"><img class="logo" src="images/logo.png" alt=""></a>
         <nav>
-            <ul class="nav">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="service.html">Servicios</a></li>
-                <li><a href="about.html">Nosotros</a></li>
-                <li><a href="#footer">Contacto</a></li>
+            <button class="hamburger-menu">&#9776;</button>
+            <ul class="lista-nav">
+                <li><a class="inicio" href="#">Inicio</a></li>
+                <li><a class="servicios" href="service.html">Servicios</a></li>
+                <li><a class="nosotros" href="about.html">Nosotros</a></li>
+                <li><a class="contacto" href="#footer">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main class="container">
-        <img class="banner-image" src="images/banner.png" alt="">
+        <img class="banner-imagen" src="images/banner.png" alt="">
 
-        <section id="one">
+        <section id="uno">
             <article>
-                <h2 class="article-content">Bienvenido/a...</h2>
-                <p class="article-content">
+                <h2 class="contenido-articulo">Bienvenido/a...</h2>
+                <p class="contenido-articulo">
 
                     En nombre de todo el equipo de Recursos Humanos, es un placer darte la más cordial bienvenida a nuestro espacio virtual. Aquí, no solo encontrarás información sobre nuestros servicios y programas de desarrollo, sino que también compartirás nuestra pasión por el desarrollo humano y el crecimiento profesional. <br><br>
 
@@ -43,18 +45,18 @@
             </article>
 
             <article>
-                <h2 class="article-content">¿Qué es una consultora de Recursos Humanos?</h2>
-                <p class="article-content"> 
+                <h2 class="contenido-articulo">¿Qué es una consultora de Recursos Humanos?</h2>
+                <p class="contenido-articulo"> 
                     Una consultora de recursos humanos es una empresa especializada en proporcionar servicios y asesoramiento relacionados con la gestión del capital humano en otras organizaciones. Estas consultoras ofrecen una amplia gama de servicios diseñados para ayudar a las empresas a optimizar sus procesos de recursos humanos, mejorar el rendimiento de su personal y alcanzar sus objetivos estratégicos. 
                 </p>
                 
-                <h2 class="article-content">¿Cuál es la función de un Consultor de RRHH?</h2>
-                <p class="article-content">
+                <h2 class="contenido-articulo">¿Cuál es la función de un Consultor de RRHH?</h2>
+                <p class="contenido-articulo">
                     La función principal de un consultor de recursos humanos es trabajar en colaboración con las organizaciones para optimizar la gestión de su capital humano y contribuir al éxito empresarial a través de una variedad de servicios especializados y asesoramiento experto.
                 </p>
 
-                <h2 class="article-content">Beneficios de contratar empresas consultoras de Recursos Humanos</h2>
-                <ul class="article-content">
+                <h2 class="contenido-articulo">Beneficios de contratar empresas consultoras de Recursos Humanos</h2>
+                <ul class="contenido-articulo">
                     <li>Especialización y experiencia.</li>
                     <li>Optimización de procesos.</li>
                     <li>Acceso a recursos y herramientas.</li>
@@ -66,47 +68,61 @@
 
             </article>
         </section>
-
-        <section id="two">
-            <section class="client">
-                <!-- <h2>Clientes</h2> -->
-
-                <a href="" target="_blank">
-                    <img src="images/cliente.png" class="client-image" alt="">
-                </a>
-                <a href="" target="_blank">
-                    <img src="images/cliente.png" class="client-image" alt="">
-                </a>
-                <a href="" target="_blank">
-                    <img src="images/cliente.png" class="client-image" alt="">
-                </a>
-
-                <a href="" target="_blank">
-                    <img src="images/cliente.png" class="client-image" alt="">
-                </a>
-                <a href="" target="_blank">
-                    <img src="images/cliente.png" class="client-image" alt="">
-                </a>
-
+        <section id="dos">
+            <section class="consejos">
+                <img class="consejo-imagen" src="images/liderazgo.png" alt="">
+                <img class="consejo-imagen" src="images/redes.png" alt="">
+                <img class="consejo-imagen" src="images/recomendacion.png" alt="">
 
             </section>
+
+        </section>
+
+        <section id="tres">
+            <section class="cliente">
+
+                <a href="" target="_blank">
+                    <img src="images/cliente.png" class="cliente-imagen" name="primer-cliente" alt="">
+                </a>
+                <a href="" target="_blank">
+                    <img src="images/cliente.png" class="cliente-imagen" name="segundo-cliente" alt="">
+                </a>
+                <a href="" target="_blank">
+                    <img src="images/cliente.png" class="cliente-imagen" name="tercer-cliente" alt="">
+                </a>
+
+                <a href="" target="_blank">
+                    <img src="images/cliente.png" class="cliente-imagen" name="cuarto-cliente" alt="">
+                </a>
+                <a href="" target="_blank">
+                    <img src="images/cliente.png" class="cliente-imagen" name="quinto-cliente" alt="">
+                </a>
+                
+
+                
+                
+            </section>
+
             
 
 
         </section>
 
-        <footer> 
+        <footer id="footer"> 
 
             <section class="footer-container">
 
                 <section class="contact">
-                    <a href="" target="_blank">
+                    <a href="https://www.linkedin.com/in/marcelo-daniel-bochor-9bb3a05/" target="_blank">
                         <img src="images/link.png" class="red-social" alt="">
                     </a>
                     <a href="" target="_blank">
                         <img src="images/wpp.png" class="red-social" alt="">
                     </a>
-                    <a href="" target="_blank">
+                    <a href="" target="">
+                        <img src="images/flecha.png" class="red-social" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/bochorconsultores/" target="_blank">
                         <img src="images/insta.png" class="red-social" alt="">
                     </a>
                     <a href="" target="_blank">
@@ -124,7 +140,7 @@
         </footer>
 
 
-
+        <script src="script.js"></script>
     </main>
 </body>
 </html>
