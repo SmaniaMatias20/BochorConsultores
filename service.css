@@ -23,14 +23,13 @@ header {
   width: 150px;
 }
 
-/* Barra de navegacion inferior */
 nav {
-  background-color: #000000;
+  background-color: #202124;
   height: 30px;
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  box-shadow: 5px 5px 10px 0px #000000;
+  box-shadow: 5px 5px 10px 0px #202124;
   padding-right: 40px;
 }
 
@@ -50,7 +49,7 @@ nav .servicios:hover {
 nav .nosotros:hover {
   background-color: #1083CC;
 }
-nav .contacto:hover {
+nav .contactos:hover {
   background-color: #41B93C;
 }
 
@@ -71,56 +70,59 @@ main {
   width: 100%;
 }
 
-section {
-  padding: 20px;
-  margin-bottom: 20px;
-}
 
-/*----------------------- Primera seccion --------------------*/
+/*----------------------- Primera seccion --------------------*/ 
 #uno {
-  background-color: #F2F2F2;
   height: 100%;
   display: flex;
   flex-direction: row;
+  color: #202124;
   justify-content: center;
-  color: #000000;
+  
 }
 
-/* Primera hoja */
+.imagen-articulo {
+  height: 700px;
+  width: 35%;
+  border-radius: 10px;
+}
+
+.articulos-servicios {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+
+}
 
 article {
+  height: 100%;
   width: 100%;
   padding: 10px 5px;
   margin: 10px;
-  box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #202124;
 }
+
+
 
 article:hover{
   color: #ffffff;
-  background-color: #000000;
-  
+  background-color: #202124;
 }
 
 .contenido-articulo{
   margin: 5%;
 }
 
-.imagen-articulo {
-  /* margin: 5%; */
-  height: 200px;
-  width: 350px;
-  border-radius: 10px;
-  display: block;
-  margin: 0 auto;
-
-}
 
 
 /* ------------------------------------------------------------------- */
 
 #dos {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #202124;
   display: block;
   flex-direction: row;
   justify-content: center;
@@ -134,14 +136,42 @@ article:hover{
 .sintoma {
   display: flex;
   text-align: justify;
-  font-size: large;
+  font-size: medium;
+  margin: 20px;
 }
+
+/* ------------------------------------------------------------------- */
+#tres {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  color: #202124;
+  justify-content: center;
+  margin-bottom: 20px;
+} 
+
+.imagen-reclutamiento{
+  height: 500px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+/* ------------------------------------------------------------------- */
+
+#cuatro {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  color: #202124;
+  justify-content: center;
+} 
+
 
 
 /*------------------------------- Footer ----------------------------- */
 footer {
   height: 100%;
-  background-color:#000000;
+  background-color:#202124;
   color: #fff;
   text-align: center;
   display: block;
@@ -152,24 +182,21 @@ footer {
 .footer-container{
   height: 40px;
   display: flex;
-  padding: 0;
+  /* padding: 0; */
   align-items: center;
   justify-content: center;
   margin: 5px;
 }
 
-.contact{
-  height: 20px;
-  display: flex;
+.contacto{
+  height: 100%;
   margin-top: 10px;
-  padding: 0px;
-  
 }
 
 .red-social {
   height: 30px;
   border-radius: 50%;
-  margin-right: 30px;
+  margin: 0px 15px;
   border-color: #fff;
   border-width: 1px;
   border-style: double; 
@@ -190,6 +217,9 @@ footer {
 @media (max-width: 768px) {
 
   .hamburger-menu {
+    background-image: url(images/hamburguesa.png);
+    background-size: cover;
+    background-position: center;
     height: 30px;
     width: 50px;
     display: block; 
@@ -212,7 +242,7 @@ footer {
     width: 200px;
     display: none; /* Ocultar el menú en pantallas menores a 768px */
     flex-direction: column;
-    background-color: #000000;
+    background-color: #202124;
   }
   .lista-nav.show {
     padding: 0;
@@ -234,23 +264,56 @@ footer {
     align-items: center;
   }
 
+  .imagen-articulo{
+    width: 100%;
+  }
+
+  #tres {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagen-reclutamiento{
+    height: 300px;
+    width: 100%;
+  }
+
   .article {
     margin: 10px 0;
     width: 90%;
   }
 
-  .red-social{
-    margin-right: 10px;
+  .articulos-servicios {
+    flex-direction: column;
+
   }
 
   .sintoma {
     display: block;
     font-size: medium;    
+    align-items: center;
+  }
+  ul{
+    padding: 0;
   }
 
   li {
     list-style: none;
   }
+
+  section.sintoma ul hr {
+      display: none;
+    }
+
+    section.sintoma ul li {
+      margin-bottom: 10px; /* Ajusta el espacio entre elementos */
+    }
+
+  .red-social{
+    margin-right: 10px;
+  }
+
 
 }
 

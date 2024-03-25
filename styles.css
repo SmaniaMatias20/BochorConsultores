@@ -18,7 +18,7 @@ header {
 }
 
 .hamburger-menu {
-  display: none; /* Ocultar el botón en pantallas mayores a 768px */
+  display: none; 
 }
 
 .logo{
@@ -26,14 +26,13 @@ header {
   width: 150px;
 }
 
-/* Barra de navegacion inferior */
 nav {
-  background-color: #000000;
+  background-color: #202124;
   height: 30px;
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  box-shadow: 5px 5px 10px 0px #000000;
+  box-shadow: 5px 5px 10px 0px #202124;
   padding-right: 40px;
 }
 
@@ -53,7 +52,7 @@ nav .servicios:hover {
 nav .nosotros:hover {
   background-color: #1083CC;
 }
-nav .contacto:hover {
+nav .contactos:hover {
   background-color: #41B93C;
 }
 
@@ -67,46 +66,31 @@ main {
   height: 100%;
   margin: auto;
   padding: 20px 0;
+
 }
 
-/* Banner de inicio */
 .banner-imagen{
   width: 100%;
 }
 
-section {
-  padding: 20px;
-  margin-bottom: 20px;
-}
 
 /*----------------------- Primera seccion --------------------*/
 #uno {
-  background-color: #fff;
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  color: #000000;
+  color: #202124;
 }
-
-/* Primera hoja */
-
 article {
-  width: 100%;
   padding: 10px 5px;
-  margin: 10px;
-
-  box-shadow: 5px 5px 15px 5px #000000;
+  margin: 20px;
+  box-shadow: 5px 5px 15px 5px #202124;
 }
-
 article:hover{
   color: #ffffff;
-  background-color: #000000;
-  
+  background-color: #202124; 
 }
-
-
-/* Texto de bienvenida */
 .contenido-articulo{
   margin: 5%;
 }
@@ -114,15 +98,18 @@ article:hover{
 /* ------------------------------------------------------------------- */
 #dos {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #202124;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 } 
 
 .consejos {
-  
+  align-items: center;
+  text-align: center;
+  margin: 10px;
 }
 
 .consejo-imagen {
@@ -141,60 +128,74 @@ article:hover{
 
 #tres {
   color: #ffffff;
-  background-color: #000000;
-  display: flex;
+  background-color: #202124;
+  display: block;
   flex-direction: row;
   justify-content: center;
 } 
 
-.cliente {
-  font-size: large;
-  display: block;
+.blog{
+  display: flex;
+  
+}
+
+.card {
+  height: 100%;
   text-align: center;
-  
+  width: 30%;
+  border: solid #202124 2px;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 10px 5px;
+  background-color: #fff;
+
 }
 
-.cliente-imagen {
-  height: 100px;
-  width: 100px;
-  border-radius: 25%;
-  margin: 0px 50px;
-  border-color: #fff;
-  border-width: 10px;
-  border-style: double;  
-  
-}
-
-img[name="primer-cliente"] {
-  background-color: #F2BB0E;
-  /* box-shadow: 0px 5px 20px 10px #F2BB0E; */
-}
-img[name="segundo-cliente"] {
-  background-color: #41B93C;
-  /* box-shadow: 0px 5px 20px 10px #41B93C; */
-}
-img[name="tercer-cliente"] {
-  background-color: #EB1249;
-  /* box-shadow: 0px 5px 20px 10px #EB1249; */
-}
-img[name="cuarto-cliente"] {
-  background-color: #1083CC;
-  /* box-shadow: 0px 5px 20px 10px #1083CC; */
-}
-img[name="quinto-cliente"] {
-  background-color: #7F2688;
-  /* box-shadow: 0px 5px 20px 10px #7F2688; */
-}
-.cliente-imagen:hover {
-  transform: scale(1.5); 
+.card:hover {
+  border: solid #fff 2px;
+  background-color: #202124;
+  color: #fff;
+  transform: scale(1.1); 
+  height: auto;
   z-index: 1; 
+
+}
+
+.card img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50px;
+}
+
+.card[name="uno"] {
+  box-shadow: 10px 10px 50px #1083CC; 
+}
+
+.card[name="dos"] {
+  box-shadow: 10px 10px 50px #41B93C;
+}
+
+.card[name="tres"] {
+  box-shadow: 10px 10px 50px #F2BB0E;
+}
+
+.card[name="cuatro"] {
+  box-shadow: 10px 10px 50px #1083CC; 
+}
+
+.card[name="cinco"] {
+  box-shadow: 10px 10px 50px #41B93C;
+}
+
+.card[name="seis"] {
+  box-shadow: 10px 10px 50px #F2BB0E;
 }
 
 
 /*------------------------------- Footer ----------------------------- */
 footer {
   height: 100%;
-  background-color:#000000;
+  background-color:#202124;
   color: #fff;
   text-align: center;
   display: block;
@@ -205,18 +206,14 @@ footer {
 .footer-container{
   height: 40px;
   display: flex;
-  padding: 0;
   align-items: center;
   justify-content: center;
   margin: 5px;
 }
 
-.contact{
-  height: 20px;
-  display: flex;
+.contacto{
+  height: 100%;
   margin-top: 10px;
-  padding: 0px;
-  
 }
 
 .red-social {
@@ -236,27 +233,12 @@ footer {
   font-size: 0.8em;
 }
 
-
-/*--------------------------------------------------------------------- */
-@media (max-width: 1600px) {
-
-  .cliente-imagen {
-    margin: 0px 20px;
-  }
-
-  .consejo-imagen {
-    height: 300px;
-    width: 300px;
-    margin: 0px 15px;
-  }
-
-
-}
-
-
 @media (max-width: 768px) {
 
   .hamburger-menu {
+    background-image: url(images/hamburguesa.png);
+    background-size: cover;
+    background-position: center;
     height: 30px;
     width: 50px;
     display: block; 
@@ -277,13 +259,13 @@ footer {
   }
   .lista-nav {
     width: 200px;
-    display: none; /* Ocultar el menú en pantallas menores a 768px */
+    display: none;
     flex-direction: column;
-    background-color: #000000;
+    background-color: #202124;
   }
   .lista-nav.show {
     padding: 0;
-    display: block; /* Mostrar el menú cuando la clase 'show' está presente */
+    display: block;
     border-style: outset;
   }
   .lista-nav li {
@@ -314,6 +296,11 @@ footer {
     height: auto;
     flex-direction: column;
     align-items: center;
+  }
+  
+  .consejos {
+    display: block;
+    text-align: center;
   }
 
   .consejo-imagen {
