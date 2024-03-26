@@ -4,6 +4,10 @@ body {
     margin: 0;
     
   }
+
+  *{
+    /* border: 1px solid magenta */
+  }
   
   
   header {
@@ -16,7 +20,7 @@ body {
   }
   
   .hamburger-menu {
-    display: none; /* Ocultar el botón en pantallas mayores a 768px */
+    display: none;
   }
   
   .logo{
@@ -24,7 +28,6 @@ body {
     width: 150px;
   }
   
-  /* Barra de navegacion inferior */
   nav {
     background-color: #202124;
     height: 30px;
@@ -59,54 +62,44 @@ body {
     list-style: none;
     display: flex;
   }
+
+  .lista-nav li {
+    transition: transform 0.3s ease-in-out;
+  }
   
   main {
     width: 90%;
     height: 100%;
     margin: auto;
-    padding: 20px 0;
   }
   
-  /* Banner de inicio */
   .banner-imagen{
     width: 100%;
   }
   
-  /* section {
-    padding: 20px;
-    margin-bottom: 20px;
-  } */
+
   
   /*----------------------- Primera seccion --------------------*/
   #uno {
-    background-color: #fff;
+    background-color: #dcdcdc;
     height: 100%;
     display: flex;
     flex-direction: row;
+    margin-top: 10px;
     justify-content: center;
     color:#202124;
+    padding: 0px 40px;
   }
 
   .card {
     height: 100%;
     text-align: center;
     width: 30%;
-    border: solid #202124 2px;
     border-radius: 50px;
-    padding: 10px;
+    padding: 2px;
     margin: 10px 5px;
     background-color: #fff;
-
-  }
-
-  .card:hover {
-    border: solid #fff 2px;
-    background-color: #202124;
-    color: #fff;
-    transform: scale(1.1); 
-    height: auto;
-    z-index: 1; 
-
+    box-shadow: 0px 10px 50px #202124; 
   }
 
   .card img {
@@ -115,8 +108,13 @@ body {
     border-radius: 50px;
   }
 
-  .card[name="camila"] {
-    box-shadow: 10px 10px 50px #1083CC; 
+  .card p {
+    margin: 10px 20px;
+    text-align: justify;
+  }
+
+  /* .card[name="camila"] {
+    box-shadow: 10px 10px 50px #ffffff; 
   }
 
   .card[name="marcelo"] {
@@ -125,7 +123,7 @@ body {
 
   .card[name="julieta"] {
     box-shadow: 10px 10px 50px #F2BB0E;
-  }
+  } */
 
   .contacto-personal{
     display: flex;
@@ -237,13 +235,38 @@ body {
     font-size: 0.8em;
   }
   
-  /*--------------------------------------------------------------------- */
+/* Estilos para tablet */
+  @media (max-width: 1024px) {
+    nav {
+      padding-right: 20px; /* Ajusta el espaciado del menú de navegación */
+    }
+
+    nav a {
+      padding: 10px 40px; /* Ajusta el espaciado de los enlaces del menú de navegación */
+    }
+
+    .consejo-imagen {
+      height: 250px;
+      width: 250px; /* Ajusta el tamaño de las imágenes de consejos */
+      margin: 0px 15px; /* Ajusta el margen de las imágenes de consejos */
+    }
+
+    /* Añade aquí los estilos adicionales para tablet */
+
+    header {
+      padding: 10px 0; /* Ajusta el espacio entre el logo y el menú de navegación */
+    }
+
+    .lista-nav {
+      padding-top: 10px; /* Ajusta el espacio entre el menú de navegación y los enlaces */
+    }
+  }
   
-  
+  /* Estilos para el celular */
   @media (max-width: 768px) {
   
     .hamburger-menu {
-      background-image: url(images/hamburguesa.png);
+      background-image: url(../src/img/hamburguesa.png);
       background-size: cover;
       background-position: center;
       height: 30px;

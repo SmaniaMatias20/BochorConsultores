@@ -2,9 +2,10 @@ body {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: small;
   margin: 0;
-  align-items: center;
-  width: 100%;
-  
+}
+
+*{
+  /* border: 1px solid magenta */
 }
 
 
@@ -61,134 +62,131 @@ nav .contactos:hover {
   display: flex;
 }
 
+.lista-nav li {
+  transition: transform 0.3s ease-in-out;
+}
+
 main {
   width: 90%;
   height: 100%;
   margin: auto;
-  padding: 20px 0;
-
-}
-
-.banner-imagen{
-  width: 100%;
 }
 
 
-/*----------------------- Primera seccion --------------------*/
+
+/*----------------------- Primera seccion --------------------*/ 
 #uno {
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   color: #202124;
+  margin-top: 10px;
+  justify-content: center;
+  background-color: #dcdcdc;
 }
-article {
+
+.imagen-articulo {
+  height: 700px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.articulos-servicios {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.serv {
+  height: 100%;
+  width: 100%;
   padding: 10px 5px;
-  margin: 20px;
+  margin: 10px;
   box-shadow: 5px 5px 15px 5px #202124;
+  background-color: #fff;
 }
-article:hover{
+
+.serv:hover{
   color: #ffffff;
-  background-color: #202124; 
+  background-color: #202124;
 }
+
 .contenido-articulo{
   margin: 5%;
 }
 
+
+
 /* ------------------------------------------------------------------- */
+
 #dos {
-  color: #ffffff;
-  background-color: #202124;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-} 
-
-.consejos {
-  align-items: center;
-  text-align: center;
-  margin: 10px;
-}
-
-.consejo-imagen {
-  height: 400px;
-  width: 400px;
-  margin: 0px 30px;
-  border-radius: 10px;
-}
-
-.consejo-imagen:hover {
-  transform: scale(1.1); 
-  z-index: 1; 
-}
-
-/* ------------------------------------------------------------------- */
-
-#tres {
   color: #ffffff;
   background-color: #202124;
   display: block;
   flex-direction: row;
   justify-content: center;
+  text-align: center;
 } 
 
-.blog{
+.question {
+  font-size: 30px;
+}
+
+.sintoma {
   display: flex;
+  text-align: justify;
+  font-size: medium;
+  margin: 20px;
+}
+
+/* ------------------------------------------------------------------- */
+#tres {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  color: #202124;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: #dcdcdc; 
+} 
+
+.imagen-reclutamiento{
+  height: 500px;
+  width: 50%;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+/* ------------------------------------------------------------------- */
+
+
+#cuatro {
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px;
+}
+
+.articulos-politicas {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px;
+  justify-content: center;
+  align-items: center;
   
 }
 
-.card {
-  height: 100%;
-  text-align: center;
-  width: 30%;
-  border: solid #202124 2px;
-  border-radius: 50px;
-  padding: 10px;
-  margin: 10px 5px;
-  background-color: #fff;
-
+.contenido-politica {
+  margin: 10px;
 }
-
-.card:hover {
-  border: solid #fff 2px;
+.pol {
+  padding: 10px 10px;
   background-color: #202124;
   color: #fff;
-  transform: scale(1.1); 
-  height: auto;
-  z-index: 1; 
-
-}
-
-.card img {
-  height: 250px;
-  width: 250px;
-  border-radius: 50px;
-}
-
-.card[name="uno"] {
-  box-shadow: 10px 10px 50px #1083CC; 
-}
-
-.card[name="dos"] {
-  box-shadow: 10px 10px 50px #41B93C;
-}
-
-.card[name="tres"] {
-  box-shadow: 10px 10px 50px #F2BB0E;
-}
-
-.card[name="cuatro"] {
-  box-shadow: 10px 10px 50px #1083CC; 
-}
-
-.card[name="cinco"] {
-  box-shadow: 10px 10px 50px #41B93C;
-}
-
-.card[name="seis"] {
-  box-shadow: 10px 10px 50px #F2BB0E;
 }
 
 
@@ -233,10 +231,39 @@ footer {
   font-size: 0.8em;
 }
 
+
+/* Estilos para tablet */
+@media (max-width: 1024px) {
+  nav {
+    padding-right: 20px; /* Ajusta el espaciado del menú de navegación */
+  }
+
+  nav a {
+    padding: 10px 40px; /* Ajusta el espaciado de los enlaces del menú de navegación */
+  }
+
+  .consejo-imagen {
+    height: 250px;
+    width: 250px; /* Ajusta el tamaño de las imágenes de consejos */
+    margin: 0px 15px; /* Ajusta el margen de las imágenes de consejos */
+  }
+
+  /* Añade aquí los estilos adicionales para tablet */
+
+  header {
+    padding: 10px 0; /* Ajusta el espacio entre el logo y el menú de navegación */
+  }
+
+  .lista-nav {
+    padding-top: 10px; /* Ajusta el espacio entre el menú de navegación y los enlaces */
+  }
+}
+
+/* Estilos para celular */
 @media (max-width: 768px) {
 
   .hamburger-menu {
-    background-image: url(images/hamburguesa.png);
+    background-image: url(../src/img/hamburguesa.png);
     background-size: cover;
     background-position: center;
     height: 30px;
@@ -259,13 +286,13 @@ footer {
   }
   .lista-nav {
     width: 200px;
-    display: none;
+    display: none; /* Ocultar el menú en pantallas menores a 768px */
     flex-direction: column;
     background-color: #202124;
   }
   .lista-nav.show {
     padding: 0;
-    display: block;
+    display: block; /* Mostrar el menú cuando la clase 'show' está presente */
     border-style: outset;
   }
   .lista-nav li {
@@ -283,30 +310,8 @@ footer {
     align-items: center;
   }
 
-  .article {
-    margin: 10px 0;
-    width: 90%;
-  }
-
-  .cliente-imagen {
-    margin: 0px 50px;
-  }
-
-  #dos{
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .consejos {
-    display: block;
-    text-align: center;
-  }
-
-  .consejo-imagen {
-    height: 300px;
-    width: 300px;
-    margin: 0px 15px;
+  .imagen-articulo{
+    width: 100%;
   }
 
   #tres {
@@ -315,11 +320,55 @@ footer {
     align-items: center;
   }
 
+  .imagen-reclutamiento{
+    height: 300px;
+    width: 100%;
+  }
+
+  .article {
+    margin: 10px 0;
+    width: 90%;
+  }
+
+  .articulos-servicios {
+    flex-direction: column;
+
+  }
+
+  .sintoma {
+    display: block;
+    font-size: medium;    
+    align-items: center;
+  }
+  ul{
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  section.sintoma ul hr {
+      display: none;
+    }
+
+    section.sintoma ul li {
+      margin-bottom: 10px; /* Ajusta el espacio entre elementos */
+    }
+
   .red-social{
     margin-right: 10px;
   }
 
+
 }
+
+
+
+
+
+
+
 
   
 
