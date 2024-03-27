@@ -21,8 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
-
+  
+  
 });
 
+// confirm("Estas seguro que deseas salir del sitio web?");
 
 

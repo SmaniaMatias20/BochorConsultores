@@ -110,29 +110,72 @@ main {
   text-align: justify;
 }
 
-/* .card[name="camila"] {
-    box-shadow: 10px 10px 50px #ffffff; 
-  }
-
-  .card[name="marcelo"] {
-    box-shadow: 10px 10px 50px #41B93C;
-  }
-
-  .card[name="julieta"] {
-    box-shadow: 10px 10px 50px #F2BB0E;
-  } */
-
 .contacto-personal {
   display: flex;
   justify-content: center;
 }
 
-.contacto-personal .red-social {
-  height: 35px;
-  width: 35px;
-  margin: 0px 15px;
-  border-color: #3c3c3c;
-  border-width: 1px;
+.redes {
+  display: flex;
+  padding-right: 45px;
+}
+
+.redes li {
+  list-style: none;
+}
+
+.redes li a {
+  background-color: #202124;
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+}
+
+.redes li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+}
+
+.redes li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.redes li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+}
+
+.redes li a:hover:before {
+  top: 0;
+}
+
+.redes li:nth-child(1) a:before {
+  background: #41b93c;
+}
+
+.redes li:nth-child(2) a:before {
+  background: #eedc55;
+}
+
+.redes li:nth-child(3) a:before {
+  background: #0077b5;
 }
 
 /*----------------------------------------------------------------- */
@@ -228,8 +271,6 @@ footer {
 .footer-text {
   font-size: 0.8em;
 }
-
-/*----------------------------------------------------------------- */
 @media (max-width: 1024px) {
   nav {
     padding-right: 20px;
@@ -309,6 +350,10 @@ footer {
     margin-bottom: 10px;
   }
 
+  .redes {
+    padding-right: 0px;
+  }
+
   #dos {
   }
 
@@ -334,7 +379,7 @@ footer {
   }
 
   section.eleccion ul li {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
   }
 
   .imagen-mision,
