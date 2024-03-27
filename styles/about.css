@@ -1,119 +1,116 @@
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: small;
-    margin: 0;
-    
-  }
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: small;
+  margin: 0;
+}
 
-  *{
-    /* border: 1px solid magenta */
-  }
-  
-  
-  header {
-    width: 100%;
-    background-color: #fff;
-    color: #fff;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .hamburger-menu {
-    display: none;
-  }
-  
-  .logo{
-    height: 150px;
-    width: 150px;
-  }
-  
-  nav {
-    background-color: #202124;
-    height: 30px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    box-shadow: 5px 5px 10px 0px #202124;
-    padding-right: 40px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 80px;
-    font-size: medium;
-  }
-  
-  nav .inicio:hover {
-    background-color: #EB1249;
-  }
-  nav .servicios:hover {
-    background-color: #F2BB0E;
-  }
-  nav .nosotros:hover {
-    background-color: #1083CC;
-  }
-  nav .contactos:hover {
-    background-color: #41B93C;
-  }
-  
-  .lista-nav {
-    list-style: none;
-    display: flex;
-  }
+* {
+  /* border: 1px solid magenta */
+}
 
-  .lista-nav li {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  main {
-    width: 90%;
-    height: 100%;
-    margin: auto;
-  }
-  
-  .banner-imagen{
-    width: 100%;
-  }
-  
+header {
+  width: 100%;
+  background-color: #fff;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 
-  
-  /*----------------------- Primera seccion --------------------*/
-  #uno {
-    background-color: #dcdcdc;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    justify-content: center;
-    color:#202124;
-    padding: 0px 40px;
-  }
+.hamburger-menu {
+  display: none;
+}
 
-  .card {
-    height: 100%;
-    text-align: center;
-    width: 30%;
-    border-radius: 50px;
-    padding: 2px;
-    margin: 10px 5px;
-    background-color: #fff;
-    box-shadow: 0px 10px 50px #202124; 
-  }
+.logo {
+  height: 150px;
+  width: 150px;
+}
 
-  .card img {
-    height: 250px;
-    width: 250px;
-    border-radius: 50px;
-  }
+nav {
+  background-color: #3c3c3c;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 10px 0px #202124;
+  padding-right: 40px;
+}
 
-  .card p {
-    margin: 10px 20px;
-    text-align: justify;
-  }
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 80px;
+  font-size: medium;
+}
 
-  /* .card[name="camila"] {
+nav .inicio:hover {
+  background-color: #eb1249;
+}
+nav .servicios:hover {
+  background-color: #f2bb0e;
+}
+nav .nosotros:hover {
+  background-color: #1083cc;
+}
+nav .contactos:hover {
+  background-color: #41b93c;
+}
+
+.lista-nav {
+  list-style: none;
+  display: flex;
+}
+
+.lista-nav li {
+  transition: transform 0.3s ease-in-out;
+}
+
+main {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+.banner-imagen {
+  width: 100%;
+}
+
+/*----------------------------------------------------------------- */
+#uno {
+  background-color: #dcdcdc;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  justify-content: center;
+  color: #202124;
+  padding: 0px 40px;
+}
+
+.card {
+  height: 100%;
+  text-align: center;
+  width: 30%;
+  border-radius: 50px;
+  padding: 2px;
+  margin: 10px 5px;
+  background-color: #fff;
+  box-shadow: 0px 10px 50px #202124;
+}
+
+.card img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50px;
+}
+
+.card p {
+  margin: 10px 20px;
+  text-align: justify;
+}
+
+/* .card[name="camila"] {
     box-shadow: 10px 10px 50px #ffffff; 
   }
 
@@ -125,239 +122,230 @@ body {
     box-shadow: 10px 10px 50px #F2BB0E;
   } */
 
-  .contacto-personal{
-    display: flex;
-    justify-content: center;
+.contacto-personal {
+  display: flex;
+  justify-content: center;
+}
 
+.contacto-personal .red-social {
+  height: 35px;
+  width: 35px;
+  margin: 0px 15px;
+  border-color: #3c3c3c;
+  border-width: 1px;
+}
+
+/*----------------------------------------------------------------- */
+#dos {
+  color: #ffffff;
+  background-color: #3c3c3c;
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.question {
+  font-size: 30px;
+}
+
+.eleccion {
+  display: flex;
+  text-align: justify;
+  font-size: medium;
+  margin: 0px 10px;
+}
+
+/*----------------------------------------------------------------- */
+
+#tres {
+  color: #ffffff;
+  background-color: #3c3c3c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mision-vision-valores {
+  text-align: center;
+}
+
+.imagen-mision,
+.imagen-vision,
+.imagen-valores {
+  height: 400px;
+  width: 400px;
+  margin: 10px 30px;
+  border-radius: 10px;
+}
+
+.imagen-mision:hover,
+.imagen-vision:hover,
+.imagen-valores:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+/*----------------------------------------------------------------- */
+footer {
+  height: 100%;
+  background-color: #3c3c3c;
+  color: #fff;
+  text-align: center;
+  display: block;
+  padding: 0px 10px 0px;
+  align-items: center;
+}
+
+.footer-container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.contacto {
+  height: 100%;
+  margin-top: 10px;
+}
+
+.red-social {
+  height: 30px;
+  border-radius: 50%;
+  margin: 0px 15px;
+  border-color: #fff;
+  border-width: 1px;
+  border-style: double;
+}
+.red-social:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+.footer-text {
+  font-size: 0.8em;
+}
+
+/*----------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  nav {
+    padding-right: 20px;
   }
 
-  .contacto-personal .red-social {
-    height: 35px;
-    width: 35px;
+  nav a {
+    padding: 10px 40px;
+  }
+
+  .consejo-imagen {
+    height: 250px;
+    width: 250px;
     margin: 0px 15px;
-    border-color: #202124;
-    border-width: 1px;
   }
 
-  /* ------------------------------------------------------------------- */
-  #dos {
-    color: #ffffff;
-    background-color: #202124;
-    display: block;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 10px;
+  header {
+    padding: 10px 0;
+  }
+
+  .lista-nav {
     padding-top: 10px;
-  } 
+  }
+}
+
+/*----------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    background-image: url(../src/img/hamburguesa.png);
+    background-size: cover;
+    background-position: center;
+    height: 30px;
+    width: 50px;
+    display: block;
+  }
+  nav {
+    display: block;
+    position: relative;
+  }
+
+  nav li {
+    display: flex;
+    width: 200px;
+  }
+
+  nav a {
+    padding: 10px 10px;
+    width: 200px;
+  }
+  .lista-nav {
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    background-color: #202124;
+  }
+  .lista-nav.show {
+    padding: 0;
+    display: block;
+    border-style: outset;
+  }
+  .lista-nav li {
+    padding: 10px 0;
+  }
+
+  main {
+    width: 100%;
+    align-items: center;
+  }
+
+  #uno {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  #dos {
+  }
 
   .question {
-    font-size: 30px;
-  }  
-
-  .eleccion{
-    display: flex;
-    text-align: justify;
-    font-size: medium;
-    margin: 0px 10px;
-
   }
 
-  
-  /* ------------------------------------------------------------------- */
-  
-  #tres {
-    color: #ffffff;
-    background-color: #202124;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  } 
-
-  .mision-vision-valores {
-    text-align: center;
-
-  }
-
-  .imagen-mision, .imagen-vision, .imagen-valores {
-    height: 400px;
-    width: 400px;
-    margin: 10px 30px;
-    border-radius: 10px;
-  }
-
-  .imagen-mision:hover, .imagen-vision:hover, .imagen-valores:hover {
-    transform: scale(1.1); 
-    z-index: 1; 
-  }
-  
-  
-  
-  /*------------------------------- Footer ----------------------------- */
-  footer {
-    height: 100%;
-    background-color:#202124;
-    color: #fff;
-    text-align: center;
+  .eleccion {
     display: block;
-    padding: 0px 10px 0px;
+    font-size: medium;
     align-items: center;
   }
-  
-  .footer-container{
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
+
+  ul {
+    padding: 0;
   }
-  
-  .contacto{
-    height: 100%;
-    margin-top: 10px;
+
+  li {
+    list-style: none;
   }
-  
+
+  section.eleccion ul hr {
+    display: none;
+  }
+
+  section.eleccion ul li {
+    margin-bottom: 10px; 
+  }
+
+  .imagen-mision,
+  .imagen-vision,
+  .imagen-valores {
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
+
   .red-social {
-    height: 30px;
-    border-radius: 50%;
-    margin: 0px 15px;
-    border-color: #fff;
-    border-width: 1px;
-    border-style: double; 
-  
+    margin-right: 10px;
   }
-  .red-social:hover {
-    transform: scale(1.5); 
-    z-index: 1; 
-  }
-  .footer-text {
-    font-size: 0.8em;
-  }
-  
-/* Estilos para tablet */
-  @media (max-width: 1024px) {
-    nav {
-      padding-right: 20px; /* Ajusta el espaciado del menú de navegación */
-    }
-
-    nav a {
-      padding: 10px 40px; /* Ajusta el espaciado de los enlaces del menú de navegación */
-    }
-
-    .consejo-imagen {
-      height: 250px;
-      width: 250px; /* Ajusta el tamaño de las imágenes de consejos */
-      margin: 0px 15px; /* Ajusta el margen de las imágenes de consejos */
-    }
-
-    /* Añade aquí los estilos adicionales para tablet */
-
-    header {
-      padding: 10px 0; /* Ajusta el espacio entre el logo y el menú de navegación */
-    }
-
-    .lista-nav {
-      padding-top: 10px; /* Ajusta el espacio entre el menú de navegación y los enlaces */
-    }
-  }
-  
-  /* Estilos para el celular */
-  @media (max-width: 768px) {
-  
-    .hamburger-menu {
-      background-image: url(../src/img/hamburguesa.png);
-      background-size: cover;
-      background-position: center;
-      height: 30px;
-      width: 50px;
-      display: block; 
-    }
-    nav{
-      display: block;
-      position: relative;
-    }
-  
-    nav li {
-      display: flex;
-      width: 200px;
-    }
-  
-    nav a {
-      padding: 10px 10px;
-      width: 200px;
-    }
-    .lista-nav {
-      width: 200px;
-      display: none; /* Ocultar el menú en pantallas menores a 768px */
-      flex-direction: column;
-      background-color: #202124;
-    }
-    .lista-nav.show {
-      padding: 0;
-      display: block; /* Mostrar el menú cuando la clase 'show' está presente */
-      border-style: outset;
-    }
-    .lista-nav li {
-      padding: 10px 0;
-    }
-  
-    main {
-      width: 100%;
-      align-items: center;
-    }
-  
-    #uno {
-      height: auto;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .card {
-      width: 80%;
-      margin-bottom: 10px; 
-    }
-
-    #dos {
-      
-    } 
-    
-    .question {
-      
-    }  
-    
-    .eleccion{
-      display: block;
-      font-size: medium;    
-      align-items: center;
-
-    }
-
-    ul{
-      padding: 0;
-    }
-  
-    li {
-      list-style: none;
-    }
-
-    section.eleccion ul hr {
-      display: none;
-    }
-
-    section.eleccion ul li {
-      margin-bottom: 10px; /* Ajusta el espacio entre elementos */
-    }
-
-
-    .imagen-mision, .imagen-vision, .imagen-valores {
-      height: 300px;
-      width: 300px;
-      margin: 0;
-    }
-  
-    .red-social{
-      margin-right: 10px;
-    }
-  
-  }
+}
