@@ -49,12 +49,15 @@ nav a {
 nav .inicio:hover {
   background-color: #eb1249;
 }
+
 nav .servicios:hover {
   background-color: #f2bb0e;
 }
+
 nav .nosotros:hover {
   background-color: #1083cc;
 }
+
 nav .contactos:hover {
   background-color: #41b93c;
 }
@@ -88,6 +91,7 @@ main {
   background-color: #dcdcdc;
   color: #202124;
 }
+
 article {
   width: 40%;
   padding: 10px 5px;
@@ -100,6 +104,7 @@ article:hover {
   color: #ffffff;
   background-color: #3c3c3c;
 }
+
 .contenido-articulo {
   margin: 5%;
 }
@@ -122,15 +127,28 @@ article:hover {
 }
 
 .consejo-imagen {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   margin: 0px 30px;
   border-radius: 10px;
 }
 
-.consejo-imagen:hover {
+/* .consejo-imagen:hover {
   transform: scale(1.1);
   z-index: 1;
+} */
+
+.imagen-ampliada {
+  width: 600px; /* O el tamaño deseado */
+  height: 600px; /* Mantener la proporción de aspecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9999; /* Para asegurar que esté por encima de otros elementos */
+  border: 2px solid black;
 }
 
 /*----------------------------------------------------------------- */
@@ -164,25 +182,88 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 5px;
+  padding: 5px;
 }
 
 .contacto {
+  display: flex;
   height: 100%;
-  margin-top: 10px;
+  align-items: center;
+
 }
 
-.red-social {
-  height: 30px;
+.redes {
+  display: flex;
+  padding-right: 45px;
+}
+
+.redes li {
+  list-style: none;
+}
+
+.redes li a {
+  background-color: #202124;
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  margin: 0 10px;
+  display: block;
   border-radius: 50%;
-  margin: 0px 15px;
-  border-color: #fff;
-  border-width: 1px;
-  border-style: double;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
 }
-.red-social:hover {
-  transform: scale(1.5);
-  z-index: 1;
+
+.redes li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
 }
+
+.redes li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.redes li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+}
+
+.redes li a:hover:before {
+  top: 0;
+}
+
+.redes li:nth-child(1) a:before {
+  background: #41b93c;
+}
+
+.redes li:nth-child(2) a:before {
+  background: #eedc55;
+}
+
+.redes li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+.contacto .redes li a {
+  background-color: #3c3c3c;
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 38px;
+}
+
 .footer-text {
   font-size: 0.8em;
 }
@@ -222,6 +303,7 @@ footer {
     width: 50px;
     display: block;
   }
+
   nav {
     display: block;
     position: relative;
@@ -236,17 +318,20 @@ footer {
     padding: 10px 10px;
     width: 200px;
   }
+
   .lista-nav {
     width: 200px;
     display: none;
     flex-direction: column;
     background-color: #202124;
   }
+
   .lista-nav.show {
     padding: 0;
     display: block;
     border-style: outset;
   }
+
   .lista-nav li {
     padding: 10px 0;
   }
