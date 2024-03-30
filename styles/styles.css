@@ -48,18 +48,22 @@ nav a {
 
 nav .inicio:hover {
   background-color: #eb1249;
+  border-radius: 30px;
 }
 
 nav .servicios:hover {
   background-color: #f2bb0e;
+  border-radius: 30px;
 }
 
 nav .nosotros:hover {
   background-color: #1083cc;
+  border-radius: 30px;
 }
 
 nav .contactos:hover {
   background-color: #41b93c;
+  border-radius: 30px;
 }
 
 .lista-nav {
@@ -132,11 +136,6 @@ article:hover {
   margin: 0px 30px;
   border-radius: 10px;
 }
-
-/* .consejo-imagen:hover {
-  transform: scale(1.1);
-  z-index: 1;
-} */
 
 .imagen-ampliada {
   width: 600px; /* O el tamaño deseado */
@@ -252,7 +251,15 @@ footer {
 }
 
 .redes li:nth-child(3) a:before {
+  background: violet;
+}
+
+.redes li:nth-child(4) a:before {
   background: #0077b5;
+}
+
+.redes li:nth-child(5) a:before {
+  background: #eb1249;
 }
 
 .contacto .redes li a {

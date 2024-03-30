@@ -46,15 +46,22 @@ nav a {
 
 nav .inicio:hover {
   background-color: #eb1249;
+  border-radius: 30px;
 }
+
 nav .servicios:hover {
   background-color: #f2bb0e;
+  border-radius: 30px;
 }
+
 nav .nosotros:hover {
   background-color: #1083cc;
+  border-radius: 30px;
 }
+
 nav .contactos:hover {
   background-color: #41b93c;
+  border-radius: 30px;
 }
 
 .lista-nav {
@@ -113,6 +120,102 @@ main {
 .contacto-personal {
   display: flex;
   justify-content: center;
+}
+
+.contacto-personal .redes li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+
+
+/*----------------------------------------------------------------- */
+#dos {
+  color: #ffffff;
+  background-color: #3c3c3c;
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.question {
+  font-size: 30px;
+}
+
+.eleccion {
+  display: flex;
+  text-align: justify;
+  font-size: medium;
+  margin: 0px 10px;
+}
+
+/*----------------------------------------------------------------- */
+
+#tres {
+  color: #ffffff;
+  background-color: #3c3c3c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mision-vision-valores {
+  text-align: center;
+}
+
+.imagen-mision,
+.imagen-vision,
+.imagen-valores {
+  height: 300px;
+  width: 300px;
+  margin: 10px 30px;
+  border-radius: 10px;
+}
+
+.imagen-mision:hover,
+.imagen-vision:hover,
+.imagen-valores:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+/*----------------------------------------------------------------- */
+footer {
+  height: 100%;
+  background-color: #3c3c3c;
+  color: #fff;
+  text-align: center;
+  display: block;
+  padding: 0px 10px 0px;
+  align-items: center;
+}
+
+.footer-container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.contacto {
+  display: flex;
+  height: 100%;
+  align-items: center;
+
+}
+
+.contacto .redes li a {
+  background-color: #3c3c3c;
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 38px;
 }
 
 .redes {
@@ -175,102 +278,23 @@ main {
 }
 
 .redes li:nth-child(3) a:before {
+  background: violet;
+}
+
+.redes li:nth-child(4) a:before {
   background: #0077b5;
 }
 
-/*----------------------------------------------------------------- */
-#dos {
-  color: #ffffff;
-  background-color: #3c3c3c;
-  display: block;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 10px;
-  padding-top: 10px;
+.redes li:nth-child(5) a:before {
+  background: #eb1249;
 }
 
-.question {
-  font-size: 30px;
-}
 
-.eleccion {
-  display: flex;
-  text-align: justify;
-  font-size: medium;
-  margin: 0px 10px;
-}
-
-/*----------------------------------------------------------------- */
-
-#tres {
-  color: #ffffff;
-  background-color: #3c3c3c;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.mision-vision-valores {
-  text-align: center;
-}
-
-.imagen-mision,
-.imagen-vision,
-.imagen-valores {
-  height: 400px;
-  width: 400px;
-  margin: 10px 30px;
-  border-radius: 10px;
-}
-
-.imagen-mision:hover,
-.imagen-vision:hover,
-.imagen-valores:hover {
-  transform: scale(1.1);
-  z-index: 1;
-}
-
-/*----------------------------------------------------------------- */
-footer {
-  height: 100%;
-  background-color: #3c3c3c;
-  color: #fff;
-  text-align: center;
-  display: block;
-  padding: 0px 10px 0px;
-  align-items: center;
-}
-
-.footer-container {
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5px;
-  padding: 5px;
-}
-
-.contacto {
-  display: flex;
-  height: 100%;
-  align-items: center;
-
-}
-
-.contacto .redes li a {
-  background-color: #3c3c3c;
-  width: 35px;
-  height: 35px;
-  background-color: #fff;
-  text-align: center;
-  line-height: 38px;
-}
 
 .footer-text {
   font-size: 0.8em;
 }
+
 @media (max-width: 1024px) {
   nav {
     padding-right: 20px;
@@ -305,6 +329,7 @@ footer {
     width: 50px;
     display: block;
   }
+
   nav {
     display: block;
     position: relative;
@@ -319,17 +344,20 @@ footer {
     padding: 10px 10px;
     width: 200px;
   }
+
   .lista-nav {
     width: 200px;
     display: none;
     flex-direction: column;
     background-color: #202124;
   }
+
   .lista-nav.show {
     padding: 0;
     display: block;
     border-style: outset;
   }
+
   .lista-nav li {
     padding: 10px 0;
   }
@@ -354,11 +382,9 @@ footer {
     padding-right: 0px;
   }
 
-  #dos {
-  }
+  #dos {}
 
-  .question {
-  }
+  .question {}
 
   .eleccion {
     display: block;

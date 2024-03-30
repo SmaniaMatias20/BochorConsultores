@@ -46,15 +46,19 @@ nav a {
 
 nav .inicio:hover {
   background-color: #eb1249;
+  border-radius: 30px;
 }
 nav .servicios:hover {
   background-color: #f2bb0e;
+  border-radius: 30px;
 }
 nav .nosotros:hover {
   background-color: #1083cc;
+  border-radius: 30px;
 }
 nav .contactos:hover {
   background-color: #41b93c;
+  border-radius: 30px;
 }
 
 .lista-nav {
@@ -269,7 +273,15 @@ footer {
 }
 
 .redes li:nth-child(3) a:before {
+  background: violet;
+}
+
+.redes li:nth-child(4) a:before {
   background: #0077b5;
+}
+
+.redes li:nth-child(5) a:before {
+  background: #eb1249;
 }
 
 .contacto .redes li a {
@@ -281,31 +293,6 @@ footer {
   line-height: 38px;
 }
 
-/* .footer-container {
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5px;
-}
-
-.contacto {
-  height: 100%;
-  margin-top: 10px;
-}
-
-.red-social {
-  height: 30px;
-  border-radius: 50%;
-  margin: 0px 15px;
-  border-color: #fff;
-  border-width: 1px;
-  border-style: double;
-}
-.red-social:hover {
-  transform: scale(1.5);
-  z-index: 1;
-} */
 .footer-text {
   font-size: 0.8em;
 }
@@ -432,5 +419,9 @@ footer {
 
   .red-social {
     margin-right: 10px;
+  }
+
+  .redes {
+    padding-right: 0px;
   }
 }
