@@ -6,7 +6,7 @@ body {
 }
 
 * {
-  /* border: 1px solid magenta */
+  border: 1px solid magenta
 }
 
 header {
@@ -157,13 +157,27 @@ main {
   color: #ffffff;
   background-color: #3c3c3c;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
-.mision-vision-valores {
-  text-align: center;
+.mision {
+  display: flex;
+  flex-direction: row;
+}
+
+.vision {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  color: #202124;
+}
+
+.valores {
+  display: flex;
+  flex-direction: row;
 }
 
 .imagen-mision,
@@ -180,6 +194,16 @@ main {
 .imagen-valores:hover {
   transform: scale(1.1);
   z-index: 1;
+}
+
+.texto-mision {
+ 
+}
+.texto-vision {
+ 
+}
+.texto-valores {
+ 
 }
 
 /*----------------------------------------------------------------- */
