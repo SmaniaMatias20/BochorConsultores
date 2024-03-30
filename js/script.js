@@ -23,12 +23,12 @@ document.addEventListener('DOMContentLoaded', function () {
     var imagenes = document.querySelectorAll('.consejo-imagen');
 
     // Agregar un evento de clic a cada imagen
-    imagenes.forEach(function (imagen) {
-        imagen.addEventListener('click', function () {
-            // Cambiar el tamaño de la imagen al hacer clic
-            this.classList.toggle('imagen-ampliada');
-        });
-    });
+    // imagenes.forEach(function (imagen) {
+    //     imagen.addEventListener('click', function () {
+    //         // Cambiar el tamaño de la imagen al hacer clic
+    //         this.classList.toggle('imagen-ampliada');
+    //     });
+    // });
 
 
 

@@ -134,6 +134,8 @@ article:hover {
   flex-direction: row;
   background-color: #fff;
   color: #202124;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px 0px #202124;
 }
 
 .recomendacion {
@@ -148,6 +150,7 @@ article:hover {
   width: 300px;
   margin: 10px 30px;
   border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px #202124;
 }
 
 .imagen-liderazgo:hover,
@@ -158,12 +161,15 @@ article:hover {
 }
 
 .texto-liderazgo {
+  margin: 20px;
  
 }
 .texto-publicidad {
+  margin: 20px;
  
 }
 .texto-recomendacion {
+  margin: 20px;
  
 }
 

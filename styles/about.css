@@ -6,7 +6,7 @@ body {
 }
 
 * {
-  border: 1px solid magenta
+  /* border: 1px solid magenta */
 }
 
 header {
@@ -173,6 +173,8 @@ main {
   flex-direction: row;
   background-color: #fff;
   color: #202124;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px 0px #202124;
 }
 
 .valores {
@@ -187,6 +189,7 @@ main {
   width: 300px;
   margin: 10px 30px;
   border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px #202124;
 }
 
 .imagen-mision:hover,
@@ -197,13 +200,13 @@ main {
 }
 
 .texto-mision {
- 
+  margin: 10px;
 }
 .texto-vision {
- 
+  margin: 10px;
 }
 .texto-valores {
- 
+  margin: 10px;
 }
 
 /*----------------------------------------------------------------- */
