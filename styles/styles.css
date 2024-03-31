@@ -106,11 +106,6 @@ article {
   background-color: #fff;
 }
 
-/* article:hover {
-  color: #ffffff;
-  background-color: #3c3c3c;
-} */
-
 .segundo-contenedor-articulo {
   background-color: #3c3c3c;
   color: #fff;
@@ -175,15 +170,17 @@ article {
 
 .texto-liderazgo {
   margin: 20px;
- 
+
 }
+
 .texto-publicidad {
   margin: 20px;
- 
+
 }
+
 .texto-recomendacion {
   margin: 20px;
- 
+
 }
 
 /*----------------------------------------------------------------- */

@@ -147,7 +147,6 @@ main {
 .eleccion {
   display: flex;
   text-align: justify;
-  font-size: medium;
   margin: 0px 10px;
 }
 
@@ -169,12 +168,14 @@ main {
 }
 
 .vision {
+  width: 100%;
   display: flex;
   flex-direction: row;
   background-color: #fff;
   color: #202124;
   border-radius: 30px;
   box-shadow: 5px 5px 10px 0px #202124;
+  margin-top: 5px;
 }
 
 .valores {
@@ -200,13 +201,22 @@ main {
 }
 
 .texto-mision {
-  margin: 10px;
+  display: flex;
+  align-items: center;
 }
-.texto-vision {
-  margin: 10px;
+p.texto-vision {
+  margin: 15px;
+  
 }
 .texto-valores {
-  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contenedor-vision {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
 }
 
 /*----------------------------------------------------------------- */
@@ -401,7 +411,7 @@ footer {
   }
 
   .card {
-    width: 80%;
+    width: 100%;
     margin-bottom: 10px;
   }
 
@@ -409,21 +419,29 @@ footer {
     padding-right: 0px;
   }
 
+  .contacto-personal ul {
+    padding: 0;
+  }
+
+
   #dos {}
 
   .question {}
 
   .eleccion {
     display: block;
-    font-size: medium;
     align-items: center;
   }
 
-  ul {
+  .eleccion ul {
     padding: 0;
   }
 
-  li {
+  .contacto ul {
+    padding: 0;
+  }
+
+  .eleccion li {
     list-style: none;
   }
 
@@ -433,6 +451,25 @@ footer {
 
   section.eleccion ul li {
     margin-bottom: 10px;
+  }
+
+  .mision {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vision {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vision ul {
+    padding: 0px 25px;
+  }
+  
+  .valores {
+    flex-direction: column;
+    align-items: center;
   }
 
   .imagen-mision,
