@@ -97,20 +97,33 @@ main {
 }
 
 article {
-  width: 40%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   padding: 10px 5px;
   margin: 20px;
   box-shadow: 5px 5px 15px 5px #202124;
   background-color: #fff;
 }
 
-article:hover {
+/* article:hover {
   color: #ffffff;
   background-color: #3c3c3c;
+} */
+
+.segundo-contenedor-articulo {
+  background-color: #3c3c3c;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 5px 15px 5px #202124;
+  margin: 10px;
 }
 
-.contenido-articulo {
+
+
+.texto-articulo {
   margin: 5%;
+  flex-direction: column;
 }
 
 /*----------------------------------------------------------------- */
@@ -321,6 +334,21 @@ footer {
   .lista-nav {
     padding-top: 10px;
   }
+
+  .liderazgo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .publicidad {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recomendacion {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /*----------------------------------------------------------------- */
@@ -380,6 +408,7 @@ footer {
   article {
     width: 90%;
     margin: 10px 0;
+    flex-direction: column;
   }
 
   .cliente-imagen {
@@ -392,16 +421,21 @@ footer {
     align-items: center;
   }
 
-  .consejos {
-    display: block;
-    text-align: center;
+  .liderazgo {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .consejo-imagen {
-    height: 300px;
-    width: 300px;
-    margin: 0px 15px;
+  .publicidad {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .recomendacion {
+    flex-direction: column;
+    align-items: center;
+  }
+
 
   #tres {
     height: auto;
