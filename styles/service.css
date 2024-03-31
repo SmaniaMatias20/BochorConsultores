@@ -48,14 +48,17 @@ nav .inicio:hover {
   background-color: #eb1249;
   border-radius: 30px;
 }
+
 nav .servicios:hover {
   background-color: #f2bb0e;
   border-radius: 30px;
 }
+
 nav .nosotros:hover {
   background-color: #1083cc;
   border-radius: 30px;
 }
+
 nav .contactos:hover {
   background-color: #41b93c;
   border-radius: 30px;
@@ -138,8 +141,13 @@ main {
 .sintoma {
   display: flex;
   text-align: justify;
-  font-size: medium;
   margin: 20px;
+}
+
+.sintoma ul {
+  list-style: none;
+  padding: 10px;
+
 }
 
 /*----------------------------------------------------------------- */
@@ -180,6 +188,7 @@ main {
 .contenido-politica {
   margin: 10px;
 }
+
 .pol {
   padding: 10px 10px;
   background-color: #3c3c3c;
@@ -309,16 +318,30 @@ footer {
 
   .consejo-imagen {
     height: 250px;
-    width: 250px; 
-    margin: 0px 15px; 
+    width: 250px;
+    margin: 0px 15px;
   }
 
   header {
-    padding: 10px 0; 
+    padding: 10px 0;
   }
 
   .lista-nav {
-    padding-top: 10px; 
+    padding-top: 10px;
+  }
+
+  .articulos-servicios {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .imagen-articulo {
+    width: 75%;
+  }
+
+  .serv {
+    width: 75%;
+
   }
 }
 
@@ -332,6 +355,7 @@ footer {
     width: 50px;
     display: block;
   }
+
   nav {
     display: block;
     position: relative;
@@ -346,17 +370,20 @@ footer {
     padding: 10px 10px;
     width: 200px;
   }
+
   .lista-nav {
     width: 200px;
     display: none;
     flex-direction: column;
     background-color: #202124;
   }
+
   .lista-nav.show {
     padding: 0;
-    display: block; 
+    display: block;
     border-style: outset;
   }
+
   .lista-nav li {
     padding: 10px 0;
   }
@@ -372,8 +399,23 @@ footer {
     align-items: center;
   }
 
-  .imagen-articulo {
+  .articulos-servicios {
     width: 100%;
+  }
+
+  .imagen-articulo {
+    width: 90%;
+  }
+
+  .serv {
+    width: 90%;
+
+  }
+
+  #dos {}
+
+  .sintoma ul {
+    padding: 0px;
   }
 
   #tres {
@@ -401,6 +443,7 @@ footer {
     font-size: medium;
     align-items: center;
   }
+
   ul {
     padding: 0;
   }
@@ -414,7 +457,7 @@ footer {
   }
 
   section.sintoma ul li {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
   }
 
   .red-social {
