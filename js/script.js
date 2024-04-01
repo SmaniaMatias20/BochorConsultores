@@ -19,107 +19,58 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Animacion Scroll Index
+
+    const elementsToRevealIndex = [
+    { selector: '.banner-imagen', delay: 100 },
+    { selector: '.contenedor-articulo', delay: 100 },
+    { selector: '.segundo-contenedor-articulo', delay: 200 },
+    { selector: '.liderazgo', delay: 300 },
+    { selector: '.publicidad', delay: 400 },
+    { selector: '.recomendacion', delay: 500 }
+    ];
     
-    ScrollReveal().reveal('.banner-imagen', { 
-    delay: 100,
-    duration: 1000,
-    distance: '50px',
-    origin: 'bottom'
+    elementsToRevealIndex.forEach(function(element) {
+    ScrollReveal().reveal(element.selector, {
+        delay: element.delay,
+        duration: 1000 + element.delay,
+        distance: '50px',
+        origin: 'bottom'
     });
-
-    ScrollReveal().reveal('.contenedor-articulo', { 
-    delay: 100,
-    duration: 1000,
-    distance: '50px',
-    origin: 'bottom'
-    });
-
-    ScrollReveal().reveal('.segundo-contenedor-articulo', { 
-    delay: 200,
-    duration: 1200,
-    distance: '50px',
-    origin: 'bottom'
-    });
-
-    ScrollReveal().reveal('.liderazgo', { 
-    delay: 300,
-    duration: 1400,
-    distance: '50px',
-    origin: 'bottom'
-    });
-
-    ScrollReveal().reveal('.publicidad', { 
-    delay: 400,
-    duration: 1600,
-    distance: '50px',
-    origin: 'bottom'
-    });
-
-    ScrollReveal().reveal('.recomendacion', { 
-    delay: 500,
-    duration: 1800,
-    distance: '50px',
-    origin: 'bottom'
     });
 
     // Animacion Scroll Service
 
-    ScrollReveal().reveal('.articulos-servicios', { 
-    delay: 100,
-    duration: 1000,
-    distance: '50px',
-    origin: 'bottom'
+    const elementsToRevealService = [
+        { selector: '.articulos-servicios', delay: 100 },
+        { selector: '.sintoma', delay: 200 },
+        { selector: '.articulos-politicas', delay: 300 }
+    ];
+    
+    elementsToRevealService.forEach(function(element) {
+    ScrollReveal().reveal(element.selector, {
+        delay: element.delay,
+        duration: 1000,
+        distance: '50px',
+        origin: 'bottom'
     });
-
-    ScrollReveal().reveal('.sintoma', { 
-    delay: 200,
-    duration: 1000,
-    distance: '50px',
-    origin: 'bottom'
-    });
-
-    ScrollReveal().reveal('.articulos-politicas', { 
-    delay: 300,
-    duration: 1000,
-    distance: '50px',
-    origin: 'bottom'
     });
 
     // Animacion Scroll About
-
-    ScrollReveal().reveal('.card', { 
-    delay: 100,
-    duration: 1000,
-    distance: '50px',
-    origin: 'bottom'
-    });
-
-    ScrollReveal().reveal('.eleccion', { 
-    delay: 200,
-    duration: 1000,
-    distance: '50px',
-    origin: 'bottom'
-    });
-
-    ScrollReveal().reveal('.mision', { 
-    delay: 300,
-    duration: 1000,
-    distance: '50px',
-    origin: 'bottom'
-    });
-
-    ScrollReveal().reveal('.vision', { 
-    delay: 400,
-    duration: 1000,
-    distance: '50px',
-    origin: 'bottom'
-    });
-
-    ScrollReveal().reveal('.valores', { 
-    delay: 500,
-    duration: 1000,
-    distance: '50px',
-    origin: 'bottom'
+    const elementsToRevealAbout = [
+    { selector: '.card', delay: 100 },
+    { selector: '.eleccion', delay: 200 },
+    { selector: '.mision', delay: 300 },
+    { selector: '.vision', delay: 400 },
+    { selector: '.valores', delay: 500 }
+    ];
+    
+    elementsToRevealAbout.forEach(function(element) {
+        ScrollReveal().reveal(element.selector, {
+            delay: element.delay,
+            duration: 1000,
+            distance: '50px',
+            origin: 'bottom'
+        });
     });
 
 
