@@ -150,6 +150,14 @@ main {
   margin: 0px 10px;
 }
 
+.eleccion ul {
+  padding: 0px 10px;
+}
+
+.eleccion li {
+  list-style: none;
+}
+
 /*----------------------------------------------------------------- */
 
 #tres {
@@ -424,7 +432,9 @@ footer {
   }
 
 
-  #dos {}
+  #dos {
+    padding: 10px 0px;
+  }
 
   .question {}
 

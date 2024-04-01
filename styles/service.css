@@ -404,7 +404,7 @@ footer {
   }
 
   .imagen-articulo {
-    width: 90%;
+    width: 85%;
   }
 
   .serv {
@@ -412,7 +412,9 @@ footer {
 
   }
 
-  #dos {}
+  #dos {
+    padding: 10px;
+  }
 
   .sintoma ul {
     padding: 0px;
