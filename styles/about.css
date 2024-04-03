@@ -378,6 +378,7 @@ footer {
   nav {
     display: block;
     position: relative;
+    z-index: 999;
   }
 
   nav li {

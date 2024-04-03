@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     hamburgerMenu.addEventListener('click', function () {
         nav.classList.toggle('show'); // Toggle añade o quita la clase 'show'
     });
+    
 
     // Animación para los enlaces del menú del encabezado
     const listaNav = document.querySelector('.lista-nav');
