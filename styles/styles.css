@@ -14,6 +14,22 @@ html {
   scroll-behavior: smooth;
 } 
 
+.divisor-pagina {
+  font-size: 50px;
+  font-family: 'Arial';
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 10px;
+  -webkit-text-fill-color: transparent; 
+  -webkit-text-stroke-width: 2px; 
+  -webkit-text-stroke-color: #000; 
+}
+
+.divisor-pagina:hover {
+  transform: scale(1.5);
+}
+
+
 * {
   /* border: 1px solid magenta */
 }
@@ -635,12 +651,53 @@ footer {
   }
 
   .imagen-articulo {
-    width: 75%;
+    width: 50%;
   }
 
   .serv {
     width: 75%;
   }
+  /*-----------------------------------------------------------------*/
+  #cinco {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagen-reclutamiento {
+    height: 300px;
+    width: 75%;
+  }
+
+  .article {
+    margin: 10px 0;
+    width: 90%;
+  }
+
+  .articulos-servicios {
+    flex-direction: column;
+  }
+
+  /*-------------------------NOSOTROS-----------------------------*/
+  #siete {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  .redes {
+    padding-right: 0px;
+  }
+
+  .contacto-personal ul {
+    padding: 0;
+  }
+  /*---------------------------------------------------------------*/
 }
 
 /*--------------------------CELULAR-----------------------------*/
@@ -648,6 +705,10 @@ footer {
 
   body {
     background-image: none;
+  }
+
+  .divisor-pagina {
+    font-size: 25px;
   }
 
   .hamburger-menu {
@@ -858,6 +919,11 @@ footer {
   .eleccion {
     display: block;
     align-items: center;
+  }
+
+  .elegir{
+    width: 300px;
+    height: 300px;
   }
 
   .eleccion ul {
