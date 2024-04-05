@@ -12,23 +12,22 @@ body {
 
 html {
   scroll-behavior: smooth;
-} 
+}
 
 .divisor-pagina {
   font-size: 50px;
-  font-family: 'Arial';
+  font-family: "Arial";
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   letter-spacing: 10px;
-  -webkit-text-fill-color: transparent; 
-  -webkit-text-stroke-width: 2px; 
-  -webkit-text-stroke-color: #000; 
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
 }
 
 .divisor-pagina:hover {
   transform: scale(1.5);
 }
-
 
 * {
   /* border: 1px solid magenta */
@@ -36,8 +35,8 @@ html {
 
 header {
   width: 100%;
-  background-color: #fff;
   color: #fff;
+  background: linear-gradient(to bottom, #202124, #3c3c3c, #ffffff);
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -267,7 +266,7 @@ article {
 }
 
 .contenido-articulo {
-  margin: 5%;
+  margin: 10px;
 }
 
 /*----------------------------------------------------------------- */
@@ -302,16 +301,96 @@ article {
   display: flex;
   flex-direction: row;
   color: #202124;
+  margin-top: 10px;
   justify-content: center;
-  margin-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.imagen-reclutamiento {
-  height: 500px;
-  width: 50%;
-  border-radius: 10px;
-  margin: 10px;
+.clientes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+
+.aie {
+  width: 500px;
+  height: 150px;
+  margin: 30px 5px; 
+ 
+}
+.alzo {
+  width: 250px;
+  height: 150px;
+  margin: 30px 30px; 
+}
+
+.focus {
+  width: 300px;
+  height: 150px;
+  margin: 20px 30px; 
+}
+
+.friday {
+  width: 300px;
+  height: 150px;
+  margin: 5px 30px; 
+}
+
+.nueva {
+  width: 300px;
+  height: 100px;
+  margin: 20px 30px; 
+}
+
+.red {
+  width: 250px;
+  height: 100px;
+  margin: 10px 30px; 
+}
+
+.monarca {
+  width: 300px;
+  height: 100px;
+  margin: 30px 30px; 
+}
+
+.nacion {
+  width: 300px;
+  height: 75px;
+  margin: 5px 30px; 
+}
+
+.passo {
+  width: 250px;
+  height: 150px;
+  margin: 30px 30px; 
+}
+
+.perfil {
+  width: 200px;
+  height: 150px;
+  margin: 5px 30px; 
+}
+
+.puelche {
+  width: 250px;
+  height: 150px;
+  margin: 5px 30px; 
+}
+
+.sport {
+  width: 300px;
+  height: 150px;
+  margin: 5px 30px; 
+}
+
+.todo {
+  width: 300px;
+  height: 150px;
+  margin: 5px 30px; 
 }
 
 /*----------------------------------------------------------------- */
@@ -406,7 +485,6 @@ article {
   box-shadow: 5px 5px 10px 0px #202124;
   align-self: center;
 }
-
 
 .eleccion {
   width: 50%;
@@ -582,7 +660,7 @@ footer {
 }
 
 .redes li:nth-child(3) a:before {
-  background: #7D258D;
+  background: #7d258d;
 }
 
 .redes li:nth-child(4) a:before {
@@ -607,7 +685,7 @@ footer {
 }
 
 /*--------------------------TABLET-----------------------------*/
-@media (max-width: 1024px) {
+@media (max-width: 1229px) {
   nav {
     padding-right: 20px;
   }
@@ -644,12 +722,17 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+  
+  .article {
+    margin: 10px 0;
+    width: 90%;
+  }
 
   .articulos-servicios {
     width: 100%;
     flex-direction: column;
   }
-
+  
   .imagen-articulo {
     width: 50%;
   }
@@ -657,28 +740,17 @@ footer {
   .serv {
     width: 75%;
   }
-  /*-----------------------------------------------------------------*/
+  /*--------------------------CINCO-------------------------------*/
   #cinco {
     height: auto;
     flex-direction: column;
     align-items: center;
   }
 
-  .imagen-reclutamiento {
-    height: 300px;
-    width: 75%;
-  }
 
-  .article {
-    margin: 10px 0;
-    width: 90%;
-  }
-
-  .articulos-servicios {
-    flex-direction: column;
-  }
 
   /*-------------------------NOSOTROS-----------------------------*/
+  /*--------------------------SIETE-------------------------------*/
   #siete {
     height: auto;
     flex-direction: column;
@@ -697,12 +769,10 @@ footer {
   .contacto-personal ul {
     padding: 0;
   }
-  /*---------------------------------------------------------------*/
 }
 
 /*--------------------------CELULAR-----------------------------*/
 @media (max-width: 768px) {
-
   body {
     background-image: none;
   }
@@ -718,12 +788,11 @@ footer {
     height: 40px;
     width: 60px;
     display: flex;
-    /* justify-content: end; */
   }
 
   header {
     height: 0px;
-    background-color: #3c3c3c;
+    background: linear-gradient(to right, #202124, #3c3c3c, #262626);
   }
 
   nav {
@@ -774,7 +843,6 @@ footer {
     padding: 0;
     display: flex;
     align-items: center;
-    /* border-style: outset; */
   }
 
   .lista-nav li {
@@ -787,7 +855,7 @@ footer {
   }
 
   /*--------------------------INICIO-----------------------------*/
-
+  /*--------------------------UNO-------------------------------*/
   #uno {
     height: auto;
     flex-direction: column;
@@ -803,7 +871,7 @@ footer {
   .cliente-imagen {
     margin: 0px 50px;
   }
-
+  /*--------------------------DOS-------------------------------*/
   #dos {
     height: auto;
     flex-direction: column;
@@ -825,21 +893,29 @@ footer {
     align-items: center;
   }
 
-  .imagen-liderazgo, .imagen-publicidad, .imagen-recomendacion {
+  .imagen-liderazgo,
+  .imagen-publicidad,
+  .imagen-recomendacion {
     height: 300px;
     width: 300px;
   }
 
   /*--------------------------SERVICIOS-----------------------------*/
-
+  /*--------------------------TRES-------------------------------*/
   #tres {
     height: auto;
     flex-direction: column;
     align-items: center;
   }
 
+  .article {
+    margin: 10px 0;
+    width: 90%;
+  }
+
   .articulos-servicios {
     width: 100%;
+    flex-direction: column;
   }
 
   .imagen-articulo {
@@ -850,32 +926,9 @@ footer {
     width: 90%;
   }
 
+  /*--------------------------CUATRO-------------------------------*/
   #cuatro {
     padding: 10px;
-  }
-
-  .sintoma ul {
-    padding: 0px;
-  }
-
-  #cinco {
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .imagen-reclutamiento {
-    height: 300px;
-    width: 100%;
-  }
-
-  .article {
-    margin: 10px 0;
-    width: 90%;
-  }
-
-  .articulos-servicios {
-    flex-direction: column;
   }
 
   .sintoma {
@@ -884,7 +937,61 @@ footer {
     align-items: center;
   }
 
+  .sintoma ul {
+    padding: 0px;
+  }
+  /*--------------------------CINCO-------------------------------*/
+  #cinco {
+  }
+
+  .clientes {
+  }
+
+  .clientes img {
+  }
+
+  .aie {
+    width: 300px;
+    height: 150px;
+  }
+  .alzo {
+  }
+
+  .focus {
+  }
+
+  .friday {
+  }
+
+  .nueva {
+  }
+
+  .red {
+  }
+
+  .monarca {
+  }
+
+  .nacion {
+  }
+
+  .passo {
+  }
+
+  .perfil {
+  }
+
+  .puelche {
+  }
+
+  .sport {
+  }
+
+  .todo {
+  }
+
   /*--------------------------NOSOTROS-----------------------------*/
+  /*--------------------------SIETE-------------------------------*/
   #siete {
     height: auto;
     flex-direction: column;
@@ -903,9 +1010,8 @@ footer {
   .contacto-personal ul {
     padding: 0;
   }
-  /*------------------------------------------------------*/
+  /*--------------------------OCHO-----------------------------*/
   #ocho {
-    /* padding: 10px 0px; */
     flex-direction: column;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 400px;
@@ -921,7 +1027,7 @@ footer {
     align-items: center;
   }
 
-  .elegir{
+  .elegir {
     width: 300px;
     height: 300px;
   }
@@ -944,6 +1050,9 @@ footer {
 
   section.eleccion ul li {
     margin-bottom: 10px;
+  }
+  /*--------------------------NUEVE-----------------------------*/
+  #nueve {
   }
 
   .mision {
