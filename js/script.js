@@ -74,6 +74,19 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // Switch
+    document.getElementById('colorSwitch').addEventListener('change', function() {
+    
+        if (this.checked) {
+            // Establecer estilos cuando el switch está activado
+
+        } else {
+            // Establecer estilos cuando el switch está desactivado
+
+        }
+
+    });
+
 
 
 
